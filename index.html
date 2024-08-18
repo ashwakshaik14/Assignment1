@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFCD9E;
+        }
+
+        /* Container settings */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Content styling */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            line-height: 1.4;
+        }
+
+        /* Text content styling */
+        .matter {
+            width: 100%;
+            max-width: 55%;
+            line-height: 1.2;
+
+        }
+
+        .matter h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .matter p {
+            font-size: 18px;
+            color: #484848;
+            margin-bottom: 20px;
+        }
+
+        .matter h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .matter .note {
+            color: #FFFFFF;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            max-width: 60%;
+            padding: 10px;
+            border: 4px solid black;
+            border-radius: 8px;
+            font-size: large;
+            color: #484848;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: large;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        /* Image styling */
+        .pic {
+            width: 100%;
+            max-width: 40%;
+            margin-bottom: 20px;
+        }
+
+        .pic img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #282828;
+            color: #FFFFFF;
+            width: 100%;
+            padding: 25px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            line-height: 1.5;
+        }
+
+        .footer .one,
+        .footer .two {
+            width: 45%;
+        }
+
+        .footer .two {
+            text-align: right;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer img {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .matter {
+                padding-top: 50px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .pic {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .footer .one,
+            .footer .two {
+                width: 100%;
+                text-align: center;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="matter">
+                <h1>An inspiring design delivered to <br> your inbox every morning</h1>
+                <p>Our team scouts the internet for the best designs,<br> illustrations and art and delivers a truly
+                    inspiring <br>one every day to your inbox</p>
+                <h2>Show me how it looks</h2>
+                <form>
+                    <input type="email" placeholder="Enter your e-mail" />
+                    <input type="submit" value="Register Now" />
+                </form>
+                <p class="note">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free - No Spam - No Data Sharing</p>
+            </div>
+            <div class="pic">
+                <img src="uncle.png" alt="Illustration">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="one">
+                <p>Prompt Generator</p>
+                <p>Dweep Daily</p>
+                <p>All Contributors</p>
+                <p>Your data on Dweep.io</p>
+                <p>Contribute to Dweep</p>
+            </div>
+            <div class="two">
+                <p>Dweep.io</p>
+                <p>Made with love in India</p>
+                <p> 
+                    <a href="#"><img src="Link.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="Insta.png" alt="Instagram"></a>
+                </p>
+                <br>
+                <p>hello@dweep.io</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
